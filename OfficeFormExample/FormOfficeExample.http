@@ -1,0 +1,6 @@
+@FormOfficeExample_HostAddress = http://localhost:5210
+
+GET {{FormOfficeExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
