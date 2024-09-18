@@ -44,7 +44,7 @@ public class OfficeFormService(IOfficeFormHttpClient officeFormHttpClient, IOpti
                     new AnswerModel { questionId = refundAppSettingModel.QuestionModel.TicketStock, answer1 = refundRequest.TicketStock },
                     new AnswerModel { questionId = refundAppSettingModel.QuestionModel.FlightNumber, answer1 = refundRequest.FlightNumber },
                     new AnswerModel { questionId = refundAppSettingModel.QuestionModel.VKAReasonCodeREF, answer1 = commonData.VKAReasonCodeREF },
-                    new AnswerModel { questionId = refundAppSettingModel.QuestionModel.AuditRemark, answer1 = refundRequest.AuditRemark },
+                    new AnswerModel { questionId = refundAppSettingModel.QuestionModel.AuditRemark, answer1 = commonData.VKAReasonCodeREF },
                     new AnswerModel { questionId = refundAppSettingModel.QuestionModel.FirstName, answer1 = refundRequest.FirstName },
                     new AnswerModel { questionId = refundAppSettingModel.QuestionModel.LastName, answer1 = refundRequest.LastName },
                     new AnswerModel { questionId = refundAppSettingModel.QuestionModel.TicketNumber, answer1 = refundRequest.TicketNumber}
@@ -78,7 +78,7 @@ public class OfficeFormService(IOfficeFormHttpClient officeFormHttpClient, IOpti
                     new AnswerModel { questionId = reIssueAppSettingModel.QuestionModel.FlightNumber, answer1 = reIssueRequest.FlightNumber },
                     new AnswerModel { questionId = reIssueAppSettingModel.QuestionModel.VKAReasonCodeSAL, answer1 = commonData.VKAReasonCodeSAL },
                     new AnswerModel { questionId = reIssueAppSettingModel.QuestionModel.VKAReasonCodeEXC, answer1 = commonData.VKAReasonCodeEXC },
-                    new AnswerModel { questionId = reIssueAppSettingModel.QuestionModel.AuditRemark, answer1 = reIssueRequest.AuditRemark },
+                    new AnswerModel { questionId = reIssueAppSettingModel.QuestionModel.AuditRemark, answer1 = reIssueRequest.TicketNumber },
                     new AnswerModel { questionId = reIssueAppSettingModel.QuestionModel.FirstName, answer1 = reIssueRequest.FirstName },
                     new AnswerModel { questionId = reIssueAppSettingModel.QuestionModel.LastName, answer1 = reIssueRequest.LastName }
                 })

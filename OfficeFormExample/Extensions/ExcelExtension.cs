@@ -37,9 +37,21 @@ public static class ExcelExtension
                     var enumValue = Enum.Parse(propType, val.ToString(), true);
                     prop.SetValue(obj, enumValue);
                 }
+                else if (propType == typeof(string) && val is DateTime)
+                {
+                    prop.SetValue(obj, ((DateTime)val).ToString("yyyy-MM-dd"));
+                }
                 else if (propType == typeof(string))
                 {
-                    prop.SetValue(obj, val?.ToString()?.Trim());
+                    DateTime parsedDate;
+                    if (DateTime.TryParse(val?.ToString(), out parsedDate))
+                    {
+                        prop.SetValue(obj, parsedDate.ToString("yyyy-MM-dd"));
+                    }
+                    else
+                    {
+                        prop.SetValue(obj, val?.ToString()?.Trim());
+                    }
                 }
                 else
                 {
