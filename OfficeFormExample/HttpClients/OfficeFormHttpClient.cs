@@ -12,7 +12,6 @@ public class OfficeFormHttpClient(
 {
     public async Task SendAsync(
         SubmitFormOfficeModel model,
-        string refer,
         string requestUri,
         CancellationToken cancellationToken)
     {
@@ -20,7 +19,6 @@ public class OfficeFormHttpClient(
         {
             var anti = antiforgery.GetAndStoreTokens(httpContextAccessor.HttpContext);
         
-            httpClient.DefaultRequestHeaders.Add("referer", refer);
             httpClient.DefaultRequestHeaders.Add("__requestverificationtoken", anti.RequestToken);
             httpClient.DefaultRequestHeaders.Add("x-correlationid", Guid.NewGuid().ToString());
             httpClient.DefaultRequestHeaders.Add("x-usersessionid", Guid.NewGuid().ToString());
@@ -34,7 +32,7 @@ public class OfficeFormHttpClient(
         
             request.Content = content;
         
-            var response = await httpClient.SendAsync(request, cancellationToken);
+            var response = await httpClient.SendAsync(request,cancellationToken);
         
             if(response.IsSuccessStatusCode)
                 logger.LogInformation("data sent , Data:{Data}",serializedModel);

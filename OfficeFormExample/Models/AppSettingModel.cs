@@ -19,7 +19,6 @@ public class ReIssueOfficeForm : OfficeForm
 
 public class OfficeForm
 {
-    public string Refer { get; set; }
     public string RequestUri { get; set; }
 }
 

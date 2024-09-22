@@ -4,5 +4,5 @@ namespace OfficeFormExample.HttpClients;
 
 public interface IOfficeFormHttpClient
 {
-    Task SendAsync(SubmitFormOfficeModel model,string refer, string requestUri, CancellationToken cancellationToken);
+    Task SendAsync(SubmitFormOfficeModel model, string requestUri, CancellationToken cancellationToken);
 }

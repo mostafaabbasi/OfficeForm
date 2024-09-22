@@ -51,8 +51,7 @@ public class OfficeFormService(IOfficeFormHttpClient officeFormHttpClient, IOpti
                 })
             };
 
-            var task = officeFormHttpClient.SendAsync(model, refundAppSettingModel.Refer, refundAppSettingModel.RequestUri,
-                cancellationToken);
+            var task = officeFormHttpClient.SendAsync(model, refundAppSettingModel.RequestUri, cancellationToken);
             
             tasks.Add(task);
         }
@@ -84,8 +83,7 @@ public class OfficeFormService(IOfficeFormHttpClient officeFormHttpClient, IOpti
                 })
             };
             
-            var task = officeFormHttpClient.SendAsync(model, reIssueAppSettingModel.Refer, reIssueAppSettingModel.RequestUri,
-                cancellationToken);
+            var task = officeFormHttpClient.SendAsync(model, reIssueAppSettingModel.RequestUri, cancellationToken);
             
             tasks.Add(task);
         }
