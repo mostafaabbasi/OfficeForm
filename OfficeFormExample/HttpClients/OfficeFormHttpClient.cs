@@ -38,7 +38,7 @@ public class OfficeFormHttpClient(
                 logger.LogInformation("data sent , Data:{Data}",serializedModel);
             else
             {
-                logger.LogError("failed , Data:{Data}",model);
+                logger.LogError("failed , Data:{Data}",serializedModel);
             }
         }
         catch (Exception e)
