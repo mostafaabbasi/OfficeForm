@@ -25,6 +25,7 @@ C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\OfficeFormExample.csproj.CoreCompileInputs.cache
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\OfficeFormExample.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\OfficeFormExample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\OfficeFormExample.sourcelink.json
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\staticwebassets\msbuild.OfficeFormExample.Microsoft.AspNetCore.StaticWebAssets.props
@@ -39,4 +40,7 @@ C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\OfficeFormExample.pdb
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\OfficeFormExample.genruntimeconfig.cache
 C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\ref\OfficeFormExample.dll
-C:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\obj\Debug\net8.0\OfficeFormExample.sourcelink.json
+c:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+c:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+c:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+c:\Users\Cloner\Downloads\FormOfficeExample\FormOfficeExample\OfficeFormExample\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

@@ -1,6 +1,8 @@
+using OfficeFormExample.Models;
+
 namespace OfficeFormExample.Services;
 
 public interface IOfficeFormService
 {
-    Task SendAsync(IFormFile file, CancellationToken cancellationToken);
+    Task<List<OfficeFormInputModel>> SendAsync(IFormFile file, CancellationToken cancellationToken);
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OfficeFormExample.Extensions;
 using OfficeFormExample.Services;
 
 namespace OfficeFormExample.Controllers;
@@ -8,8 +9,9 @@ namespace OfficeFormExample.Controllers;
 public class OfficeFormController(IOfficeFormService officeFormService) : ControllerBase
 {
     [HttpPost("submit-with-http-client")]
-    public async Task SubmitWithHttpClient(IFormFile file)
+    public async Task<IActionResult> SubmitWithHttpClient(IFormFile file)
     {
-        await officeFormService.SendAsync(file, HttpContext.RequestAborted);
+        var result = await officeFormService.SendAsync(file, HttpContext.RequestAborted);
+        return await result.ExportExcel("WaverCodes",$"Result-{DateTime.Now}",HttpContext.RequestAborted);
     }
 }
