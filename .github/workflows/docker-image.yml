@@ -18,7 +18,7 @@ jobs:
       - name: Extract version from .csproj
         id: get_version
         run: |
-          VERSION=$(grep -oPm1 "(?<=<Version>)[^<]+" OfficeFormExample.csproj)
+          VERSION=$(grep -oPm1 "(?<=<Version>)[^<]+" OfficeFormExample/OfficeFormExample.csproj)
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Build the Docker image
