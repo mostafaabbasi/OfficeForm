@@ -22,4 +22,4 @@ jobs:
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag form-office:${{ env.VERSION }}
+        run: docker build . --file OfficeFormExample/Dockerfile --tag form-office:${{ env.VERSION }}
